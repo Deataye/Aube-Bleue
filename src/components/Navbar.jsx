@@ -19,8 +19,8 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${
-        isScrolled ? 'bg-gray-900 text-white' : 'bg-transparent text-blue-900'
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+        isScrolled ? 'bg-gray-900 text-white shadow-lg' : 'bg-transparent text-blue-900'
       }`}
     >
       <div className="flex justify-between items-center px-6 py-4">
@@ -34,7 +34,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Links */}
-        <ul className="hidden md:flex space-x-8 text-lg font-semibold">
+        <ul className="hidden md:flex space-x-6 text-base lg:text-lg font-medium">
           <li className="hover:text-blue-300 transition-colors">
             <a href="#about">À propos</a>
           </li>
@@ -53,6 +53,7 @@ const Navbar = () => {
         <button
           className="md:hidden text-2xl focus:outline-none"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle navigation menu"
         >
           {isMenuOpen ? '✖' : '☰'}
         </button>
@@ -60,28 +61,30 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <ul className="md:hidden bg-gray-900 text-white text-lg font-semibold space-y-4 py-4 px-6">
-          <li className="hover:text-blue-300 transition-colors">
-            <a href="#about" onClick={() => setIsMenuOpen(false)}>
-              À propos
-            </a>
-          </li>
-          <li className="hover:text-blue-300 transition-colors">
-            <a href="#services" onClick={() => setIsMenuOpen(false)}>
-              Services
-            </a>
-          </li>
-          <li className="hover:text-blue-300 transition-colors">
-            <a href="#pricing" onClick={() => setIsMenuOpen(false)}>
-              Tarifs
-            </a>
-          </li>
-          <li className="hover:text-blue-300 transition-colors">
-            <a href="#contact" onClick={() => setIsMenuOpen(false)}>
-              Contact
-            </a>
-          </li>
-        </ul>
+        <div className="md:hidden bg-gray-900 text-white text-base font-medium space-y-4 py-4 px-6">
+          <ul className="space-y-4">
+            <li className="hover:text-blue-300 transition-colors">
+              <a href="#about" onClick={() => setIsMenuOpen(false)}>
+                À propos
+              </a>
+            </li>
+            <li className="hover:text-blue-300 transition-colors">
+              <a href="#services" onClick={() => setIsMenuOpen(false)}>
+                Services
+              </a>
+            </li>
+            <li className="hover:text-blue-300 transition-colors">
+              <a href="#pricing" onClick={() => setIsMenuOpen(false)}>
+                Tarifs
+              </a>
+            </li>
+            <li className="hover:text-blue-300 transition-colors">
+              <a href="#contact" onClick={() => setIsMenuOpen(false)}>
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
       )}
     </nav>
   );
