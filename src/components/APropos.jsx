@@ -8,7 +8,7 @@ const APropos = () => {
     <section className="bg-gradient-to-b from-blue-200 to-purple-200 py-10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-18 max-w-[1280px] " >
         {/* Title */}
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight text-[#081356] text-center mb-8">
+        <h2 className="text-[60px] font-semi-bold leading-[80.49px]  sm:text-4xl md:text-5xl   text-[#081356] text-center mb-8">
           À propos
         </h2>
 

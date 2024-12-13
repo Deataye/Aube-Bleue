@@ -22,7 +22,7 @@ const Services = () => {
         </div>
 
         {/* Title */}
-        <h2 className="text-[40px] md:text-[60px] font-semi-bold leading-[50px] md:leading-[80px] text-[#081356] text-center mb-8">
+        <h2 className="text-[60px] md:text-[60px] font-semi-bold leading-[80.49px] md:leading-[80px] text-[#081356] text-center mb-8">
           Services
         </h2>
 

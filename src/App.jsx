@@ -6,6 +6,7 @@ import Protocol from "./components/Protocol"
 import Tarifs from "./components/Tarifs"
 import Contact from "./components/Contact"
 import Avis from "./components/Avis"
+import Footer from "./components/Footer"
 
 function App() {
   
@@ -20,6 +21,7 @@ function App() {
       <Tarifs/>
       <Contact/>
       <Avis/>
+      <Footer/>
     </>
   )
 }

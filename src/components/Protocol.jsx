@@ -41,7 +41,7 @@ const Protocol = () => {
       <div className="container mx-auto max-w-[1100px]">
         {/* Title */}
         <div className="text-center mb-8">
-          <h2 className="text-[40px] md:text-[60px] font-semi-bold leading-tight text-[#081356] mb-4">
+          <h2 className="text-[60px] md:text-[60px] font-semi-bold leading-[80.49px] text-[#081356] mb-4">
             Protocole
           </h2>
           <p className="text-[#081356] text-[16px] md:text-[20px] font-normal leading-relaxed">

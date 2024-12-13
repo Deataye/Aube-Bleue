@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+ import { Link } from 'react-scroll';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -36,16 +37,16 @@ const Navbar = () => {
         {/* Desktop Links */}
         <ul className="hidden md:flex space-x-6 text-base lg:text-lg font-medium">
           <li className="hover:text-blue-300 transition-colors">
-            <a href="#about">À propos</a>
+          <Link to='apropos' smooth={true} offset={0} duration={500} >APropos</Link>
           </li>
           <li className="hover:text-blue-300 transition-colors">
-            <a href="#services">Services</a>
+          <Link to='services' smooth={true} offset={0} duration={500} >Services</Link>
           </li>
           <li className="hover:text-blue-300 transition-colors">
-            <a href="#pricing">Tarifs</a>
+          <Link to='tarifs' smooth={true} offset={0} duration={500} >Tarifs</Link>
           </li>
           <li className="hover:text-blue-300 transition-colors">
-            <a href="#contact">Contact</a>
+          <Link to='contact' smooth={true} offset={0} duration={500} >Contact</Link>
           </li>
         </ul>
 
