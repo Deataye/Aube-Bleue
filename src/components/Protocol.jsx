@@ -37,8 +37,8 @@ const Protocol = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-b from-blue-200 to-purple-200 py-12 px-4">
-      <div className="container mx-auto max-w-6xl">
+    <section className="bg-gradient-to-b from-blue-200 to-purple-200 py-12 ">
+      <div className="container mx-auto max-w-[1100px]">
         {/* Title */}
         <div className="text-center mb-8">
           <h2 className="text-[40px] md:text-[60px] font-semi-bold leading-tight text-[#081356] mb-4">
@@ -50,7 +50,7 @@ const Protocol = () => {
         </div>
 
         {/* Techniques List */}
-        <div className="space-y-8">
+        <div className="space-y-8 px-1">
           {techniques.map((technique, index) => (
             <div
               key={index}

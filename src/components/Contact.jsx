@@ -3,9 +3,9 @@ import React from "react";
 const Contact = () => {
   return (
     <section className="bg-gradient-to-b from-blue-200 to-purple-200 py-10 px-4">
-      <div className="container mx-auto px-4 md:px-8 max-w-4xl text-blue-900">
+      <div className="container mx-auto px-4 md:px-8 max-w-[1100px] text-[#081356]">
         {/* Title */}
-        <h2 className="text-4xl font-bold text-center mb-10">Contact</h2>
+        <h2 className="text-4xl font-bold  text-center mb-10">Contact</h2>
 
         {/* Address and Hours */}
         <div className="text-lg leading-relaxed mb-8">
@@ -40,7 +40,7 @@ const Contact = () => {
 
         {/* Reservation Button */}
         <div className="text-center mb-6">
-          <button className="bg-blue-500 hover:bg-blue-700 text-white text-lg font-semibold px-6 py-3 rounded transition">
+          <button className="bg-[#AFB4F2] hover:bg-blue-200 text-[#081356] text-lg font-semibold px-6 py-2 rounded-xl transition">
             Réservez vos soins ici
           </button>
         </div>
