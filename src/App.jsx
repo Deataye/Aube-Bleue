@@ -8,6 +8,7 @@ import Contact from "./components/Contact"
 import Avis from "./components/Avis"
 import Footer from "./components/Footer"
 
+
 function App() {
   
 
@@ -15,13 +16,14 @@ function App() {
     <>
       <Navbar/>
       <HeroSection/>
-      <APropos/>
-      <Services/>
+      <APropos id="apropos"/>
+      <Services id="services" />
       <Protocol/>
-      <Tarifs/>
-      <Contact/>
+      <Tarifs id="tarifs" />
+      <Contact id="contact" />
       <Avis/>
       <Footer/>
+     
     </>
   )
 }

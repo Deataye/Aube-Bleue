@@ -2,7 +2,7 @@ import React from 'react';
 
 const Tarifs = () => {
   return (
-    <section className="bg-gradient-to-b from-blue-200 to-purple-200 py-12 px-4">
+    <section className="bg-gradient-to-b from-purple-200 to-blue-200 py-12 px-4">
       <div className="container mx-auto max-w-[1100px]">
         {/* Title */}
         <div className=" mb-8">

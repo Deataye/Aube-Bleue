@@ -51,7 +51,7 @@ const Avis = () => {
   const currentReview = reviews[currentReviewIndex];
 
   return (
-    <section className="bg-gradient-to-b from-blue-200 to-purple-200 py-10 px-4">
+    <section className="bg-gradient-to-b from-purple-200 to-blue-200 py-10 px-4">
       <div className="container mx-auto px-4 md:px-8 max-w-[1170px] text-[#081356]">
         {/* Title */}
         <h2 className="text-[60px] font-semi-bold leading-[80.49px] text-center mb-6">Avis</h2>

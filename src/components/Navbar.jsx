@@ -62,7 +62,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-gray-900 text-white text-base font-medium space-y-4 py-4 px-6">
+        <div className="md:hidden bg-gray-900 text-white w-full text-base font-medium space-y-4 py-4 px-6">
           <ul className="space-y-4">
             <li className="hover:text-blue-300 transition-colors">
               <a href="#about" onClick={() => setIsMenuOpen(false)}>

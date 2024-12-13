@@ -11,7 +11,7 @@ import Image7 from '../assets/services-7.jpg';
 
 const Services = () => {
   return (
-    <section className="bg-gradient-to-b from-blue-200 to-purple-200 py-12 px-4">
+    <section className="bg-gradient-to-b from-purple-200 to-blue-200 py-12 px-4">
       <div className="container mx-auto max-w-[1300px]">
         {/* Single Image (For mobile, displayed above heading) */}
         <div className="block  md:hidden mb-8">
@@ -29,7 +29,7 @@ const Services = () => {
         {/* Upper Section: Text and Single Image */}
         <div className="flex flex-col-reverse md:flex-row items-center  gap-8 mb-12">
           {/* Left: Text */}
-          <div className="md:w-1/2 px-20  text-blue-900">
+          <div className="md:w-1/2 lg:px-20 sm:px-4  text-blue-900">
             <p className="text-[#081356] text-[20px] font-normal leading-[30px] mb-4">
               Mes services répondent à vos besoins de:
             </p>
@@ -46,7 +46,7 @@ const Services = () => {
           </div>
 
           {/* Right: Single Image */}
-          <div className=" hidden px-48 md:block   ">
+          <div className=" hidden  lg:px-60 lg:w-[505px] md:block   ">
             <div
               className="w-[270px] h-[365px] bg-cover bg-center shadow-md"
               style={{ backgroundImage: `url(${Image1})` }}
@@ -55,11 +55,11 @@ const Services = () => {
         </div>
 
         {/* Lower Section: Image Gallery */}
-        <div className="grid grid-cols-1 lg:px-44 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1   lg:px-16  sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {[Image2, Image3, Image4, Image5, Image6, Image7].map((image, index) => (
             <div
               key={index}
-              className="w-[270px] h-[365px] bg-cover bg-center shadow-md mx-auto"
+              className="w-[270px]  h-[365px]  bg-cover bg-center shadow-md mx-auto"
               style={{ backgroundImage: `url(${image})` }}
             ></div>
           ))}

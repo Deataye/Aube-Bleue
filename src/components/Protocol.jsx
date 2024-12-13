@@ -38,31 +38,31 @@ const Protocol = () => {
 
   return (
     <section className="bg-gradient-to-b from-blue-200 to-purple-200 py-12 ">
-      <div className="container mx-auto max-w-[1100px]">
+      <div className="container mx-auto max-w-[1200px] px-2">
         {/* Title */}
         <div className="text-center mb-8">
-          <h2 className="text-[60px] md:text-[60px] font-semi-bold leading-[80.49px] text-[#081356] mb-4">
+          <h2 className="text-[60px] md-text[60px]  font-semi-bold leading-relaxed text-[#081356] mb-4">
             Protocole
           </h2>
-          <p className="text-[#081356] text-[16px] md:text-[20px] font-normal leading-relaxed">
+          <p className="text-[#081356] text-[22px] md:text-[30px] font-normal leading-relaxed">
             Association de six techniques
           </p>
         </div>
 
         {/* Techniques List */}
-        <div className="space-y-8 px-1">
+        <div className="space-y-8 ">
           {techniques.map((technique, index) => (
             <div
               key={index}
-              className="flex flex-col md:flex-row items-center md:items-start gap-6"
+              className="flex flex-col md:flex-row items-start  md:items-start gap-6"
             >
               {/* Number */}
-              <div className="text-[#081356] text-[20px] md:text-[25px] font-semi-bold">
+              <div className="text-[#081356]  text-[20px] md:text-[25px] font-semi-bold">
                 {index + 1}.
               </div>
 
               {/* Details */}
-              <div className="flex-1 text-center md:text-left">
+              <div className="flex-1 text-left  md:text-left">
                 <p className="text-[#081356] text-[18px] md:text-[25px] font-semi-bold mb-2">
                   {technique.title}
                 </p>
