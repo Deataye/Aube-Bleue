@@ -1,3 +1,4 @@
+import { Routes ,Route} from 'react-router-dom'
 import Navbar from "./components/Navbar"
 import HeroSection from "./components/HeroSection"
 import APropos from "./components/APropos"
@@ -23,7 +24,6 @@ function App() {
       <Contact id="contact" />
       <Avis/>
       <Footer/>
-     
     </>
   )
 }

@@ -10,23 +10,72 @@ const Avis = () => {
     const fetchReviews = async () => {
       const data = [
         {
-          name: "Laura Garcia Sanchez",
+          name: "ICAN Training",
           rating: 5,
           content:
-            "Top experience in a warm atmosphere. From the first moment I felt safe and very attentive. Servane has magical and very intuitive hands capable of finding all tensions, both physical and emotional, a total letting go. I highly recommend it, it does a lot of good. Now I found the place. Thank you very much 😊",
+            "A very deep, intense & interesting experience. I am very familiar with manual therapies and massage but this was an extraordinary journey.A must try",
         },
         {
-          name: "John Doe",
+          name: "Laura Garcia Sanchez",
           rating: 4,
           content:
-            "Amazing service and attention to detail. The atmosphere was calming and the experience was refreshing!",
+            "Top experience in a warm atmosphere. From the first moment I felt safe and very attentive. Servane has magical and very intuitive hands capable of finding all tensions, both physical and emotional, a total letting go. I highly recommend it, it does a lot of good. Now I found the place 🤩. Thank you very much",
         },
         {
-          name: "Jane Smith",
+          name: "Linn de Rham",
           rating: 5,
           content:
-            "Highly recommend! Servane is incredibly skilled and ensures you leave feeling rejuvenated.",
+            "A fantastic massage experience, very different to what I was used to. I came out feeling light and liberated and full of energy. I can only highly recommend Servane’s amazing technique.",
         },
+        {
+          name: "Robert walker",
+          rating: 4,
+          content:
+            "Exceeded my expectations greatly and have already made a second appointment which should sum up Madame Sevane skill set not to mention her calm warming environment- I highly recommend ***** 👌",
+        },
+        {
+          name: "martine bandelier",
+          rating: 4,
+          content:
+            "A magical moment, out of time. Servane has an open heart and quite exceptional technical skills.Listening to the body with finesse and efficiency.She is a therapist in whom we have complete confidence from the first moments of treatmentA great discovery",
+        },
+        {
+          name: "christelle lagarde",
+          rating: 4,
+          content:
+            "Servane is a fairy! I was touched and moved by his kindness and generosity.She is a very gifted masseuse who soothes the body, heart and soul.I warmly recommendThank you 🙏",
+        },
+        {
+          name: "Joëlle Berney",
+          rating: 4,
+          content:
+            "Servane a des mains de fée … magnifique moment de détente, avec écoute, empathie et respect. L’atmosphère est chaleureuse, bienveillante, propice au laisser-aller. Je recommande à 1000%!!",
+        },
+        {
+          name: "cyrielle gianesello",
+          rating: 4,
+          content:
+            "An incredibly relaxing and liberating massage that provides total relief. I recommend from the bottom of my heart the massages carried out by Servane who is totally attentive and who manages to identify our needs thanks to an astonishing sensitivity. Thank you again for this wonderful moment suspended outside of time.",
+        },
+        {
+          name: "Perrochon Sophie",
+          rating: 4,
+          content:
+            "If you are looking for a massage experience with a lot of professionalism and which is off the beaten track then you must go see Servane in Prangins who will meet all your expectations. Servane’s personality adds a memorable memory to this delicious moment.Sophie 😀",
+        },
+        {
+          name: "Mariana Z",
+          rating: 4,
+          content:
+            "Total recommended. I have done many massages and by so far Servane’s massage was the best. Not only due to her technique, is about the energy flows that creates the magic. After her sessions I felt myself with new energy and renovated. Appreciated her words so much💫✨Thank you 🙏",
+        },
+        {
+          name: "ICAN Training",
+          rating: 4,
+          content:
+            "A very deep, intense & interesting experience. I am very familiar with manual therapies and massage but this was an extraordinary journey.A must try",
+        },
+       
       ];
       setReviews(data);
     };
@@ -51,10 +100,10 @@ const Avis = () => {
   const currentReview = reviews[currentReviewIndex];
 
   return (
-    <section className="bg-gradient-to-b from-purple-200 to-blue-200 py-10 px-4">
+    <section className="bg-gradient-to-b from-purple-200 to-blue-200 py-12 px-4">
       <div className="container mx-auto px-4 md:px-8 max-w-[1170px] text-[#081356]">
         {/* Title */}
-        <h2 className="text-[60px] font-semi-bold leading-[80.49px] text-center mb-6">Avis</h2>
+        <h2 className="text-[35px] lg:text-[60px] font-semi-bold leading-[55px] lg:leading-[80.49px] text-center ">Avis</h2>
 
         {/* Star Rating */}
         <div className="text-center mb-4">
@@ -81,7 +130,7 @@ const Avis = () => {
 
         {/* Review Button */}
         <div className="text-center mb-6">
-          <button className="bg-[#AFB4F2] hover:bg-blue-200 text-[#081356] text-lg font-semibold px-6 py-2 rounded-xl transition">
+          <button className="bg-[#AFB4F2] hover:bg-blue-200 text-[#081356] text-[15px] leading-[16px] lg:text-lg lg:leading-relaxed font-semibold px-6 py-2 rounded-xl transition">
             Écrire un avis ici
           </button>
         </div>

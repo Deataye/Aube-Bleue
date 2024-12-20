@@ -9,20 +9,14 @@ import Image5 from '../assets/services-5.jpg';
 import Image6 from '../assets/services-6.jpg';
 import Image7 from '../assets/services-7.jpg';
 
-const Services = () => {
+const Services = ({id}) => {
   return (
-    <section className="bg-gradient-to-b from-purple-200 to-blue-200 py-12 px-4">
+    <section id={id} className="bg-gradient-to-b from-purple-200 to-blue-200 py-12 px-4">
       <div className="container mx-auto max-w-[1300px]">
-        {/* Single Image (For mobile, displayed above heading) */}
-        <div className="block  md:hidden mb-8">
-          <div
-            className="w-[270px] bg-black h-[365px] bg-cover bg-center shadow-md  mx-auto"
-            style={{ backgroundImage: `url(${Image1})` }}
-          ></div>
-        </div>
+       
 
         {/* Title */}
-        <h2 className="text-[60px] md:text-[60px] font-semi-bold leading-[80.49px] md:leading-[80px] text-[#081356] text-center mb-8">
+        <h2 className="text-[35px] lg:text-[60px] font-semi-bold leading-[55px] lg:leading-[80.49px] text-[#081356] text-center mb-8">
           Services
         </h2>
 
@@ -30,10 +24,10 @@ const Services = () => {
         <div className="flex flex-col-reverse md:flex-row items-center  gap-8 mb-12">
           {/* Left: Text */}
           <div className="md:w-1/2 lg:px-20 sm:px-4  text-blue-900">
-            <p className="text-[#081356] text-[20px] font-normal leading-[30px] mb-4">
+            <p className="text-[#081356] lg:text-[20px] text-[15px] font-normal lg:leading-[30px] leading-[20px] mb-4">
               Mes services répondent à vos besoins de:
             </p>
-            <ul className="text-[#081356]   text-[20px] font-normal leading-[30px] list-disc space-y-2 pl-6">
+            <ul className="text-[#081356]   lg:text-[20px] text-[15px] font-normal lg:leading-[30px] leading-[20px] list-disc space-y-2 pl-6">
               <li>Harmonisation du corps, de l’âme et de l’esprit</li>
               <li>Avoir un bon ancrage</li>
               <li>Améliorer le sommeil</li>
@@ -55,11 +49,11 @@ const Services = () => {
         </div>
 
         {/* Lower Section: Image Gallery */}
-        <div className="grid grid-cols-1   lg:px-16  sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-3 overflow-hidden px-6   lg:px-12 gap-3   lg:gap-5 ">
           {[Image2, Image3, Image4, Image5, Image6, Image7].map((image, index) => (
             <div
               key={index}
-              className="w-[270px]  h-[365px]  bg-cover bg-center shadow-md mx-auto"
+              className="w-[95px] lg:w-[277px] h-[140px] lg:h-[386px] bg-cover bg-center shadow-md mx-auto"
               style={{ backgroundImage: `url(${image})` }}
             ></div>
           ))}

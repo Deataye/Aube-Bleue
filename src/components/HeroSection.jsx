@@ -19,16 +19,16 @@ const HeroSection = () => {
 
   return (
     <section
-      className="relative bg-cover bg-center h-screen flex items-center justify-center text-center"
+      className="relative bg-cover bg-center h-screen  flex items-center justify-center text-center"
       style={{
         backgroundImage: `url(${Herobg})`,
       }}
     >
-      <div className="text-white  px-8">
-        <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-[90px] font-semibold mb-4 text-[#252F6D]">
+      <div className="text-white  ">
+        <h1 className="text-[60px] leading-[99.3px] lg:text-[90px] lg:leading-relaxed font-semibold  text-[#252F6D]">
           Aube Bleue
         </h1>
-        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl leading-relaxed text-[#252F6D]  font-semibold whitespace-pre-wrap">
+        <p className="text-[25px] leading-[30px] lg:text-3xl lg:leading-relaxed text-[#252F6D] px-7  font-semibold whitespace-pre-wrap">
           {quotes[currentQuoteIndex]}
         </p>
         <button className="mt-6 px-4 py-2 sm:px-6 sm:py-3 bg-[#A6B4E4] text-[#081356] text-sm sm:text-base font-semibold rounded-lg shadow-md hover:bg-blue-200 transition duration-300">

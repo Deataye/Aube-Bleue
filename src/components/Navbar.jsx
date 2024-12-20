@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
  import { Link } from 'react-scroll';
+//  import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -24,7 +25,7 @@ const Navbar = () => {
         isScrolled ? 'bg-gray-900 text-white shadow-lg' : 'bg-transparent text-blue-900'
       }`}
     >
-      <div className="flex justify-between items-center px-6 py-4">
+      <div className="flex justify-between items-center px-6 py-4 overflow-hidden">
         {/* Logo */}
         <div className="flex items-center">
           <img
@@ -37,16 +38,16 @@ const Navbar = () => {
         {/* Desktop Links */}
         <ul className="hidden md:flex space-x-6 text-base lg:text-lg font-medium">
           <li className="hover:text-blue-300 transition-colors">
-          <Link to='apropos' smooth={true} offset={0} duration={500} >APropos</Link>
+          <Link to='apropos' smooth={true} offset={-50} duration={500} >APropos</Link>
           </li>
           <li className="hover:text-blue-300 transition-colors">
-          <Link to='services' smooth={true} offset={0} duration={500} >Services</Link>
+          <Link to='services' smooth={true} offset={-50} duration={500} >Services</Link>
           </li>
           <li className="hover:text-blue-300 transition-colors">
-          <Link to='tarifs' smooth={true} offset={0} duration={500} >Tarifs</Link>
+          <Link to='tarifs' smooth={true} offset={-50} duration={500} >Tarifs</Link>
           </li>
           <li className="hover:text-blue-300 transition-colors">
-          <Link to='contact' smooth={true} offset={0} duration={500} >Contact</Link>
+          <Link to='contact' smooth={true} offset={-50} duration={500} >Contact</Link>
           </li>
         </ul>
 
@@ -65,24 +66,22 @@ const Navbar = () => {
         <div className="md:hidden bg-gray-900 text-white w-full text-base font-medium space-y-4 py-4 px-6">
           <ul className="space-y-4">
             <li className="hover:text-blue-300 transition-colors">
-              <a href="#about" onClick={() => setIsMenuOpen(false)}>
-                À propos
-              </a>
+            <Link to='apropos' smooth={true} offset={0} duration={500} onClick={() => setIsMenuOpen(false)} >APropos</Link>
             </li>
             <li className="hover:text-blue-300 transition-colors">
-              <a href="#services" onClick={() => setIsMenuOpen(false)}>
-                Services
-              </a>
+            <Link to='services' smooth={true} offset={-50} duration={500} onClick={() => setIsMenuOpen(false)} >Services</Link>
+                
+              
             </li>
             <li className="hover:text-blue-300 transition-colors">
-              <a href="#pricing" onClick={() => setIsMenuOpen(false)}>
-                Tarifs
-              </a>
+            <Link to='tarifs' smooth={true} offset={-50} duration={500} onClick={() => setIsMenuOpen(false)} >Tarifs</Link>
+             
+              
             </li>
             <li className="hover:text-blue-300 transition-colors">
-              <a href="#contact" onClick={() => setIsMenuOpen(false)}>
-                Contact
-              </a>
+             <Link to='contact' smooth={true} offset={-50} duration={500} onClick={() => setIsMenuOpen(false)} >Contact</Link>
+              
+            
             </li>
           </ul>
         </div>
