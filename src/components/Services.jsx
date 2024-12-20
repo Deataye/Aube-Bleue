@@ -23,7 +23,7 @@ const Services = ({id}) => {
         {/* Upper Section: Text and Single Image */}
         <div className="flex flex-col-reverse md:flex-row items-center  gap-8 mb-12">
           {/* Left: Text */}
-          <div className="md:w-1/2 lg:px-20 sm:px-4  text-blue-900">
+          <div className="md:w-1/2 pl:3 lg:pl-24 text-blue-900">
             <p className="text-[#081356] lg:text-[20px] text-[15px] font-normal lg:leading-[30px] leading-[20px] mb-4">
               Mes services répondent à vos besoins de:
             </p>
@@ -40,9 +40,9 @@ const Services = ({id}) => {
           </div>
 
           {/* Right: Single Image */}
-          <div className=" hidden  lg:px-60 lg:w-[505px] md:block   ">
+          <div className=" hidden pl-60  lg:w-[505px] md:block   ">
             <div
-              className="w-[270px] h-[365px] bg-cover bg-center shadow-md"
+              className="w-[270px] h-[365px]  bg-cover bg-center shadow-md"
               style={{ backgroundImage: `url(${Image1})` }}
             ></div>
           </div>
