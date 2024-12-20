@@ -8,7 +8,7 @@ const APropos = ({id}) => {
   return (
     <>
     <section id={id} className="hidden lg:block bg-gradient-to-b from-blue-200 to-purple-200 py-12">
-      <div className="container mx-auto   lg:px-18 max-w-[1280px] " >
+      <div className="container mx-auto   lg:px-16 max-w-[1280px] " >
         {/* Title */}
         <h2 className=" text-[35px] lg:text-[60px] font-semi-bold leading-[55px] lg:leading-[80.49px]     text-[#081356] text-center mb-8">
           À propos
