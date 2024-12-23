@@ -73,7 +73,7 @@ const Protocol = () => {
 
               {/* Image */}
               <div
-                className="w-[100px] h-[100px] lg:w-[141px] lg:h-[140px] rounded-full bg-cover bg-center shadow-md"
+                className="w-[100px] h-[100px] lg:w-[181px] lg:h-[180px] rounded-full bg-cover bg-center shadow-md"
                 style={{ backgroundImage: `url(${technique.image})` }}
               ></div>
             </div>
