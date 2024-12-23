@@ -11,12 +11,12 @@ import Image7 from '../assets/services-7.jpg';
 
 const Services = ({id}) => {
   return (
-    <section id={id} className="bg-gradient-to-b from-purple-200 to-blue-200 py-12 px-4">
+    <section id={id} className="bg-[linear-gradient(180deg,_#C9A6D1_100%,_#91ACC9_3%,_#D3E3FE_38%)] py-12 px-4">
       <div className="container mx-auto max-w-[1300px]">
        
 
         {/* Title */}
-        <h2 className="text-[35px] lg:text-[60px] font-semi-bold leading-[55px] lg:leading-[80.49px] text-[#081356] text-center mb-8">
+        <h2 className="text-[35px] lg:text-[70px] font-normal font-sans leading-[55px] lg:leading-[80.49px] text-[#081356] text-center mb-8">
           Services
         </h2>
 
@@ -24,10 +24,10 @@ const Services = ({id}) => {
         <div className="flex flex-col-reverse md:flex-row items-center  gap-8 mb-12">
           {/* Left: Text */}
           <div className="md:w-1/2 pl:3 lg:pl-24 text-blue-900">
-            <p className="text-[#081356] lg:text-[20px] text-[15px] font-normal lg:leading-[30px] leading-[20px] mb-4">
+            <p className="text-[#081356] lg:text-[25px] text-[15px] font-sans font-normal lg:leading-[30px] leading-[20px] mb-4">
               Mes services répondent à vos besoins de:
             </p>
-            <ul className="text-[#081356]   lg:text-[20px] text-[15px] font-normal lg:leading-[30px] leading-[20px] list-disc space-y-2 pl-6">
+            <ul className="text-[#081356]   lg:text-[25px] text-[15px] font-sans font-normal lg:leading-[30px] leading-[20px] list-disc space-y-2 pl-6">
               <li>Harmonisation du corps, de l’âme et de l’esprit</li>
               <li>Avoir un bon ancrage</li>
               <li>Améliorer le sommeil</li>

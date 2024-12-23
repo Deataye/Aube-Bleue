@@ -7,17 +7,17 @@ import Image1 from '../assets/services-1.jpg';
 const APropos = ({id}) => {
   return (
     <>
-    <section id={id} className="hidden lg:block bg-gradient-to-b from-blue-200 to-purple-200 py-12">
+    <section id={id} className="hidden lg:block bg-[linear-gradient(180deg,_#91ACC9_3%,_#D3E3FE_38%,_#C9A6D1_100%)] py-12">
       <div className="container mx-auto   lg:px-16 max-w-[1280px] " >
         {/* Title */}
-        <h2 className=" text-[35px] lg:text-[60px] font-semi-bold leading-[55px] lg:leading-[80.49px]     text-[#081356] text-center mb-8">
+        <h2 className=" text-[35px] lg:text-[70px] font-sans font-normal leading-[55px] lg:leading-[80.49px]     text-[#081356] text-center mb-8">
           À propos
         </h2>
 
         {/* Top Section: Text Left, Image Right */}
         <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8 mb-10">
           {/* Text Block */}
-          <div className=" text-[#081356] lg:px-10 px-4 lg:text-[20px] text-[15px]  font-normal lg:leading-relaxed text-centre md:text-left">
+          <div className=" text-[#081356] lg:px-10 px-4 lg:text-[25px] text-[15px]  font-sans font-normal lg:leading-[30px] text-centre md:text-left">
             <p>
               Je m'appelle Servane, passionnée par l'harmonie entre le corps,
               l'âme et l'esprit. Mon approche des massages repose sur
@@ -52,7 +52,7 @@ const APropos = ({id}) => {
           </div>
 
           {/* Text Block */} 
-          <div className=" text-[#081356] lg:px-16  px-4  lg:text-[20px] text-[15px]  font-normal leading-relaxed  ">
+          <div className=" text-[#081356] lg:px-16  px-4  lg:text-[25px] text-[15px]  font-sans font-normal leading-relaxed lg:leading-[30px] ">
             <p className="mb-4">
               Formée dans diverses techniques de massage telles que: l'ayurveda,
               le kobido, le massage crânien, les points réflexes et énergétique.
@@ -72,12 +72,12 @@ const APropos = ({id}) => {
         </div>
       </div>
     </section>
-    <section id={id} className='lg:hidden bg-gradient-to-b from-blue-200 to-purple-200 py-12'>
+    <section id={id} className='lg:hidden bg-[linear-gradient(180deg,_#91ACC9_3%,_#D3E3FE_38%,_#C9A6D1_100%)] py-12'>
        <div className='container mx-auto   lg:px-18 max-w-[1280px]'>
         <h1 className='text-[35px] font-semi-bold leading-[55px]     text-[#081356] text-center mb-8'>À propos</h1>
         <div className="  items-center gap-6 ">
           {/* Text Block */}
-          <div className=" text-[#081356]  px-6  text-[15px]  font-normal   mb-8">
+          <div className=" text-[#081356]  px-6  text-[15px]  font-sans font-normal   mb-8">
             <p>
               Je m'appelle Servane, passionnée par l'harmonie entre le corps,
               l'âme et l'esprit. Mon approche des massages repose sur
@@ -98,7 +98,7 @@ const APropos = ({id}) => {
               style={{ backgroundImage: `url(${AboutPic3})` }}
             ></div>
            </div>
-           <div className=" text-[#081356]   px-6   text-[15px]  font-normal leading-relaxed mb-8  ">
+           <div className=" text-[#081356]   px-6   text-[15px]  font-sans font-normal leading-relaxed mb-8  ">
             <p className="mb-4">
               Formée dans diverses techniques de massage telles que: l'ayurveda,
               le kobido, le massage crânien, les points réflexes et énergétique.

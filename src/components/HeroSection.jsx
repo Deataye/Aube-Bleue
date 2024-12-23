@@ -19,19 +19,22 @@ const HeroSection = () => {
 
   return (
     <section
-      className="relative bg-cover bg-center h-screen  flex items-center justify-center text-center"
+      className="relative bg-cover bg-center   h-screen  flex items-center justify-center text-center"
       style={{
         backgroundImage: `url(${Herobg})`,
       }}
     >
       <div className="text-white  ">
-        <h1 className="text-[60px] leading-[99.3px] lg:text-[90px] lg:leading-relaxed font-semibold  text-[#252F6D]">
+        <h1 className="text-[60px] leading-[99.3px] lg:text-[110px] lg:leading-[147.72px] font-sans font-normal  text-[#252F6D]">
           Aube Bleue
         </h1>
         <p className="text-[25px] leading-[30px] lg:text-3xl lg:leading-relaxed text-[#252F6D] px-7  font-semibold whitespace-pre-wrap">
           {quotes[currentQuoteIndex]}
         </p>
-        <button className="mt-6 px-4 py-2 sm:px-6 sm:py-3 bg-[#A6B4E4] text-[#081356] text-sm sm:text-base font-semibold rounded-lg shadow-md hover:bg-blue-200 transition duration-300">
+        <button className="hidden lg:block w-[340px] h-[51px] px-4 py-2 bg-[#A6B4E4] text-[#081356] font-sans font-normal text-[30px] leading-[34.5px] absolute top-[480px] left-[889px] gap-0 rounded-3xl border border-[rgba(8,19,86,1)]">
+          Réservez vos soins ici
+        </button>
+        <button className="lg:hidden mt-6 px-4 py-2 sm:px-6 sm:py-3 bg-[#A6B4E4] text-[#081356] text-sm sm:text-base font-semibold rounded-lg shadow-md hover:bg-blue-200 transition duration-300">
           Réservez vos soins ici
         </button>
       </div>

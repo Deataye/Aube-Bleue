@@ -100,20 +100,20 @@ const Avis = () => {
   const currentReview = reviews[currentReviewIndex];
 
   return (
-    <section className="bg-gradient-to-b from-purple-200 to-blue-200 py-12 px-4">
+    <section className="bg-[linear-gradient(360deg,_#938FED_3%,_#91ACC9_38%,_#5E65E9_100%)] py-12 px-4">
       <div className="container mx-auto px-4 md:px-8 max-w-[1170px] text-[#081356]">
         {/* Title */}
-        <h2 className="text-[35px] lg:text-[60px] font-semi-bold leading-[55px] lg:leading-[80.49px] text-center ">Avis</h2>
+        <h2 className="text-[35px] lg:text-[70px] font-normal font-sans leading-[55px] lg:leading-[80.49px] text-center ">Avis</h2>
 
         {/* Star Rating */}
         <div className="text-center mb-4">
-          <div className="flex justify-center space-x-1 mb-2">
+          <div className="flex justify-center  space-x-1 mb-2">
             {/* Render stars dynamically based on rating */}
             {currentReview &&
               Array.from({ length: 5 }).map((_, index) => (
                 <span
                   key={index}
-                  className={`text-2xl ${
+                  className={`text-5xl ${
                     index < currentReview.rating
                       ? "text-[#081356]"
                       : "text-gray-300"
@@ -123,23 +123,23 @@ const Avis = () => {
                 </span>
               ))}
           </div>
-          <p className="text-lg">
+          <p className="text-lg font-sans font-normal lg:text-[25px] lg:leading-[25px] mb-20">
             Note de {currentReview?.rating} sur {reviews.length} avis
           </p>
         </div>
 
         {/* Review Button */}
-        <div className="text-center mb-6">
-          <button className="bg-[#AFB4F2] hover:bg-blue-200 text-[#081356] text-[15px] leading-[16px] lg:text-lg lg:leading-relaxed font-semibold px-6 py-2 rounded-xl transition">
+        <div className="text-center mb-32">
+          <button className="bg-[#B5B5F2] hover:bg-blue-200 text-[#081356] text-[15px] leading-[16px] lg:text-[25px] lg:leading-[25px] font-normal px-6 py-2 rounded-3xl border border-[rgba(8,19,86,1)] transition">
             Écrire un avis ici
           </button>
         </div>
 
         {/* Review Content */}
         {currentReview && (
-          <div className="text-center">
-            <p className="italic mb-6 leading-relaxed">{currentReview.content}</p>
-            <p className="font-semibold">{currentReview.name}</p>
+          <div className="text-center px-8  lg:w-[1074px] ">
+            <p className=" mb-6 lg:text-[25px] lg:leading-[30px] font-normal font-sans  leading-relaxed">{currentReview.content}</p>
+            <p className="font-normal font-sans lg:text-[25px] lg:leading-[30px]">{currentReview.name}</p>
           </div>
         )}
 
@@ -149,7 +149,7 @@ const Avis = () => {
             <span
               key={index}
               className={`w-2 h-2 rounded-full cursor-pointer transition ${
-                index === currentReviewIndex ? "bg-blue-500" : "bg-gray-400"
+                index === currentReviewIndex ? "bg-[#081356]" : "bg-[45509F]"
               }`}
               onClick={() => handleReviewChange(index)}
             ></span>
