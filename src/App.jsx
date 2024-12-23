@@ -10,6 +10,7 @@ import Avis from "./components/Avis"
 import Footer from "./components/Footer"
 
 
+
 function App() {
   
 
@@ -23,6 +24,7 @@ function App() {
       <Tarifs id="tarifs" />
       <Contact id="contact" />
       <Avis/>
+      
       <Footer/>
     </>
   )
