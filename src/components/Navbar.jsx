@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import  Logo from '../assets/logo.svg'
 
  import { Link } from 'react-scroll';
 //  import { Link } from 'react-router-dom';
@@ -26,13 +27,12 @@ const Navbar = () => {
     >
       <div className="flex justify-between items-center px-6 py-4 overflow-hidden">
         {/* Logo */}
-        <div className="flex items-center">
-          <img
-            src="../src/assets/logo.svg" // Replace with your logo path
-            alt="Aube Bleue Logo"
-            className="h-[107px] w-[107px]"
-          />
+        <div className="flex items-center h-[107px] w-[107px] "
+                      style={{ backgroundImage: `url(${Logo})` }}>
+                    
+         
         </div>
+        
 
         {/* Desktop Links */}
         <ul className="hidden md:flex space-x-24 px-20  text-[#081356]  text-base lg:text-[25px] lg:leading-[28.75px] font-normal">
