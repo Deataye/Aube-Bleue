@@ -3,7 +3,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <section className='bg-[#C7C3E0] w-full flex flex-row  '>
+    <section className='bg-[#C7C3E0] w-full h-[182px] flex flex-row  '>
     <div className="    px-6 py-10 lg:py-16 lg:w-[1200px]   ">
         <p>Aube Bleue © 2024 – Tous droits réservés.</p>
         

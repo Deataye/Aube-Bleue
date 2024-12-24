@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = ({id}) => {
   return (
-    <section id={id} className="bg-[linear-gradient(180deg,_#C9A6D1_3%,_#91ACC9_38%,_#5E65E9_100%)] py-12  ">
+    <section id={id} className=" py-12  ">
       <div className="container mx-auto px-4 md:px-8 max-w-[1170px] text-[#081356]">
         {/* Title */}
         <h2 className="text-[35px] lg:text-[70px] font-normal leading-[55px] lg:leading-[80.49px]  text-center mb-10">Contact</h2>

@@ -100,7 +100,7 @@ const Avis = () => {
   const currentReview = reviews[currentReviewIndex];
 
   return (
-    <section className="bg-[linear-gradient(360deg,_#938FED_3%,_#91ACC9_38%,_#5E65E9_100%)] py-12 px-4">
+    <section className="h-[900px] py-12 px-4">
       <div className="container mx-auto px-4 md:px-8 max-w-[1170px] text-[#081356]">
         {/* Title */}
         <h2 className="text-[35px] lg:text-[70px] font-normal font-sans leading-[55px] lg:leading-[80.49px] text-center ">Avis</h2>
@@ -138,8 +138,8 @@ const Avis = () => {
         {/* Review Content */}
         {currentReview && (
           <div className="text-center px-8  lg:w-[1074px] ">
-            <p className=" mb-6 lg:text-[25px] lg:leading-[30px] font-normal font-sans  leading-relaxed">{currentReview.content}</p>
-            <p className="font-normal font-sans lg:text-[25px] lg:leading-[30px]">{currentReview.name}</p>
+            <p className="  lg:text-[25px] lg:leading-[30px] font-normal font-sans mb-12  leading-relaxed">{currentReview.content}</p>
+            <p className="font-normal font-sans lg:text-[25px] lg:leading-[30px] mb-12 underline">{currentReview.name}</p>
           </div>
         )}
 
@@ -149,7 +149,7 @@ const Avis = () => {
             <span
               key={index}
               className={`w-2 h-2 rounded-full cursor-pointer transition ${
-                index === currentReviewIndex ? "bg-[#081356]" : "bg-[45509F]"
+                index === currentReviewIndex ? "bg-[#081356]" : "bg-[#45509F]"
               }`}
               onClick={() => handleReviewChange(index)}
             ></span>
