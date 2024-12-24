@@ -1,12 +1,12 @@
 import React from 'react';
-
+import PagePic1 from '../assets/page-1.jpg';
 const Page1 = () => {
   return (
-    <section className='max-w-full bg-[linear-gradient(180deg,_#79A8B4_23%,_#4BA3B3_57.5%,_#E678C2_88%)]'>
+    <section className='max-w-full py-32  bg-[linear-gradient(180deg,_#79A8B4_23%,_#4BA3B3_57.5%,_#E678C2_88%)]'>
     <div className="
      p-6  max-w-7xl mx-auto">
       {/* Title */}
-      <h1 className="text-[50px] leading-[80px] items-center font-normal text-[#081356] mb-4">
+      <h1 className="text-[50px] leading-[80px] py-10 text-center font-normal text-[#081356] mb-4">
         1. Le massage d’inspiration Ayurvédique
       </h1>
 
@@ -20,16 +20,15 @@ const Page1 = () => {
           <p className="mb-4">
             Une des vertus majeures des massages ayurvédiques est leur capacité à améliorer la qualité du sommeil. En relaxant les muscles et en réduisant l’anxiété, ils aident à atteindre un sommeil plus profond et réparateur. De plus, ces massages aident à équilibrer les doshas, favorisant ainsi un bien-être global.
           </p>
-          <p className="mb-4">
+          <p className="mb-8">
             Ils sont également particulièrement efficaces pour soulager les douleurs chroniques. En ciblant les zones de tension et en améliorant la circulation sanguine, ils permettent de réduire les inflammations et apaiser les douleurs musculaires et articulaires. En incorporant ces pratiques dans sa routine de soins, on peut réellement transformer la qualité de vie, en apportant légèreté et sérénité tout en allégeant les maux persistants.
           </p>
         </div>
 
         {/* Image and Call-to-Action */}
         <div className="relative">
-          <img
-            src="../src/assets/page-1.jpg" // Replace with your image path
-            alt="Ayurvedic Massage"
+          <div
+            style={{ backgroundImage: `url(${PagePic1})` }}
             className="w-[289px] h-[385px] max-w-xs  shadow-md"
           />
           <a

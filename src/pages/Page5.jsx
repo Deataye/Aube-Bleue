@@ -1,11 +1,11 @@
 import React from 'react';
-
+import PagePic5 from '../assets/page-5.svg';
 const Page1 = () => {
   return (
-    <section className='max-w-full bg-[linear-gradient(180deg,_#FFEFFD_14.5%,_#E29192_68%,_#3E3B72_100%)]'>
+    <section className='max-w-full py-32 bg-[linear-gradient(180deg,_#FFEFFD_14.5%,_#E29192_68%,_#3E3B72_100%)]'>
     <div className=" max-w-7xl mx-auto">
       {/* Title */}
-      <h1 className="text-[50px] leading-[80px] items-center font-normal text-[#081356] mb-4">
+      <h1 className="text-[50px] leading-[80px] py-10 text-center font-normal text-[#081356] mb-4">
       5. Le massage énergétique guérissant Réaligrements corps Âme Esprit 
 
       </h1>
@@ -14,7 +14,7 @@ const Page1 = () => {
       <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
         {/* Text Description */}
         <div className="text-[#081356] text-[25px] leading-[30px] font-sans font-normal flex-1">
-          <p className="mb-4">
+          <p className="mb-8">
           Les massages énergétiques sont des pratiques holistiques qui visent à rétablir l'harmonie entre le corps, l'âme et l'esprit. En utilisant des techniques variées comme le toucher doux, la pression et les mouvements fluides, ces massages permettent de libérer les blocages énergétiques et de favoriser une circulation harmonieuse de l'énergie vitale. Ils favorisent également un profond réalignement intérieur, permettant de reconnecter avec soi-même et de stimuler les processus de guérison.
           </p>
           
@@ -22,9 +22,8 @@ const Page1 = () => {
 
         {/* Image and Call-to-Action */}
         <div className="relative">
-          <img
-            src="../src/assets/page-5.svg" // Replace with your image path
-            alt="Ayurvedic Massage"
+          <div
+            style={{ backgroundImage: `url(${PagePic5})` }}
             className="w-[349px] h-[356px] max-w-xs"
           />
           <a

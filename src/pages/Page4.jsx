@@ -1,11 +1,11 @@
 import React from 'react';
-
+import PagePic4 from '../assets/page-4.png';
 const Page1 = () => {
   return (
-    <section className='max-w-full bg-[linear-gradient(180deg,_#FFEBD4_0%,_#976E6B_59%,_#A6BAF0_100%)]'>
+    <section className='max-w-full py-32 bg-[linear-gradient(180deg,_#FFEBD4_0%,_#976E6B_59%,_#A6BAF0_100%)]'>
     <div className=" p-6  max-w-7xl mx-auto">
       {/* Title */}
-      <h1 className="text-[50px] leading-[80px] items-center font-normal text-[#081356] mb-4">
+      <h1 className="text-[50px] leading-[80px] py-10  text-center font-normal text-[#081356] mb-4">
       4. Le massage par pression de réflexologie
 
       </h1>
@@ -17,7 +17,7 @@ const Page1 = () => {
           <p className="mb-4">
           Les massages d'acupression sont basés sur les principes de la médecine traditionnelle chinoise et visent à libérer les blocages énergétiques dans le corps. En stimulant des points précis sur les méridiens, ces massages favorisent la circulation sanguine et lymphatique, améliorant ainsi la vitalité et le bien-être général.
           </p>
-          <p className="mb-4">
+          <p className="mb-8">
           Parmi leurs vertus, ils aident à soulager le stress, l'anxiété et les tensions musculaires, tout en réduisant les douleurs chroniques, notamment au niveau des cervicales et du dos. L'acupression cible spécifiquement les zones de tension, offrant un soulagement efficace des douleurs dorsales et cervicales. De plus, elle peut renforcer le système immunitaire et améliorer la qualité du sommeil. En intégrant ce type de massage dans votre routine de soins, vous favorisez un équilibre harmonieux entre le corps et l'esprit.
           </p>
           
@@ -25,9 +25,8 @@ const Page1 = () => {
 
         {/* Image and Call-to-Action */}
         <div className="relative">
-          <img
-            src="../src/assets/page-4.png" // Replace with your image path
-            alt="Ayurvedic Massage"
+          <div
+            style={{ backgroundImage: `url(${PagePic4})` }}
             className="w-[368px] h-[276px] max-w-xs "
           />
           <a

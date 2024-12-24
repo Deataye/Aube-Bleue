@@ -1,4 +1,5 @@
 import React from 'react';
+import  Logo from '../assets/logo.svg'
 
 const Footer = () => {
   return (
@@ -8,13 +9,11 @@ const Footer = () => {
       </div>
       <div className="flex items-center justify-end px-6 py-4 lg:py-6">
         {/* Logo */}
-        <div>
-          <img
-            src="../src/assets/logo.svg" // Replace with your logo path
-            alt="Aube Bleue Logo"
-            className="h-[107px] w-[107px]"
-          />
-        </div>
+        <div className="flex items-center h-[107px] w-[107px] "
+                              style={{ backgroundImage: `url(${Logo})` }}>
+                            
+                 
+                </div>
       </div>
     </section>
   );

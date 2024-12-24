@@ -34,7 +34,7 @@ function App() {
           <Contact id="contact" />
           <Avis />
         </div>
-              <Footer />
+              
             </>
           }
         />
@@ -45,6 +45,7 @@ function App() {
         <Route path="/details/5" element={<Page5 />} />
         <Route path="/details/6" element={<Page6 />} />
       </Routes>
+      <Footer />
     </>
   );
 }

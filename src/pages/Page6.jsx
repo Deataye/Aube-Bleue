@@ -1,11 +1,11 @@
 import React from 'react';
-
+import PagePic6 from '../assets/page-6.svg';
 const Page1 = () => {
   return (
-    <section className='max-w-full bg-[linear-gradient(180deg,_#FFEFFD_14.5%,_#E29192_68%,_#3E3B72_100%)]'>
+    <section className='max-w-full py-32 bg-[linear-gradient(180deg,_#FFEFFD_14.5%,_#E29192_68%,_#3E3B72_100%)]'>
     <div className=" max-w-7xl mx-auto">
       {/* Title */}
-      <h1 className="text-[50px]  leading-[80px] items-center font-normal text-[#081356] mb-4">
+      <h1 className="text-[50px]  leading-[80px] py-10 text-center font-normal text-[#081356] mb-4">
       6. Massage classique sportif: Libération tension musculaires  
       </h1>
 
@@ -16,7 +16,7 @@ const Page1 = () => {
           <p className="mb-4">
           Le massage sportif est une technique conçue pour prévenir et traiter les tensions musculaires, particulièrement chez les athlètes et les personnes actives. En utilisant des manœuvres spécifiques telles que les frictions, les pétrissages et les étirements, ce type de massage cible les groupes musculaires sollicités pendant l'effort physique.
           </p>
-          <p className="mb-4">
+          <p className="mb-8">
           Ses bienfaits incluent la réduction des douleurs musculaires, l'amélioration de la flexibilité et l'accélération de la récupération après l'exercice.
           </p>
           
@@ -24,9 +24,8 @@ const Page1 = () => {
 
         {/* Image and Call-to-Action */}
         <div className="relative">
-          <img
-            src="../src/assets/page-6.svg" // Replace with your image path
-            alt="Ayurvedic Massage"
+          <div
+            style={{ backgroundImage: `url(${PagePic6})` }}
             className="w-[280px] h-[466px] max-w-xs "
           />
           <a
