@@ -37,16 +37,16 @@ const Navbar = () => {
         {/* Desktop Links */}
         <ul className="hidden md:flex space-x-24 px-20  text-[#081356]  text-base lg:text-[25px] lg:leading-[28.75px] font-normal">
           <li className="hover:text-blue-300 transition-colors">
-          <Link to='apropos' smooth={true} offset={-100} duration={500} >APropos</Link>
+          <Link to='apropos' smooth={true} offset={0} duration={500} >APropos</Link>
           </li>
           <li className="hover:text-blue-300 transition-colors">
-          <Link to='services' smooth={true} offset={-100} duration={500} >Services</Link>
+          <Link to='services' smooth={true} offset={0} duration={500} >Services</Link>
           </li>
           <li className="hover:text-blue-300 transition-colors">
-          <Link to='tarifs' smooth={true} offset={-100} duration={500} >Tarifs</Link>
+          <Link to='tarifs' smooth={true} offset={0} duration={500} >Tarifs</Link>
           </li>
           <li className="hover:text-blue-300 transition-colors">
-          <Link to='contact' smooth={true} offset={-100} duration={500} >Contact</Link>
+          <Link to='contact' smooth={true} offset={0} duration={500} >Contact</Link>
           </li>
         </ul>
 
