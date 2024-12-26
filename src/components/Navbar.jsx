@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import  Logo from '../assets/logo.svg'
-
- import { Link } from 'react-scroll';
-//  import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll'; // Import smooth scrolling Link
+import { Link as RouterLink } from 'react-router-dom'; // Import React Router Link
+import Logo from '../assets/logo.svg';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -23,30 +22,38 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`absolute top-0 left-0 w-full  z-50 transition-all duration-300 `}
+      className={`absolute top-0 left-0 w-full z-50 transition-all duration-300`}
     >
       <div className="flex justify-between items-center px-6 py-4 overflow-hidden">
-        {/* Logo */}
-        <div className="flex items-center h-[107px] w-[107px] "
-                      style={{ backgroundImage: `url(${Logo})` }}>
-                    
-         
-        </div>
-        
+        {/* Logo with homepage link */}
+        <RouterLink to="/" className="flex items-center h-[107px] w-[107px]">
+          <div
+            style={{ backgroundImage: `url(${Logo})` }}
+            className="h-full w-full bg-cover bg-center"
+          ></div>
+        </RouterLink>
 
         {/* Desktop Links */}
-        <ul className="hidden md:flex space-x-24 px-20  text-[#081356]  text-base lg:text-[25px] lg:leading-[28.75px] font-normal">
+        <ul className="hidden md:flex space-x-24 px-20 text-[#081356] text-base lg:text-[25px] lg:leading-[28.75px] font-normal">
           <li className="hover:text-blue-300 transition-colors">
-          <Link to='apropos' smooth={true} offset={0} duration={500} >APropos</Link>
+            <ScrollLink to="apropos" smooth={true} offset={0} duration={500}>
+              APropos
+            </ScrollLink>
           </li>
           <li className="hover:text-blue-300 transition-colors">
-          <Link to='services' smooth={true} offset={0} duration={500} >Services</Link>
+            <ScrollLink to="services" smooth={true} offset={0} duration={500}>
+              Services
+            </ScrollLink>
           </li>
           <li className="hover:text-blue-300 transition-colors">
-          <Link to='tarifs' smooth={true} offset={0} duration={500} >Tarifs</Link>
+            <ScrollLink to="tarifs" smooth={true} offset={0} duration={500}>
+              Tarifs
+            </ScrollLink>
           </li>
           <li className="hover:text-blue-300 transition-colors">
-          <Link to='contact' smooth={true} offset={0} duration={500} >Contact</Link>
+            <ScrollLink to="contact" smooth={true} offset={0} duration={500}>
+              Contact
+            </ScrollLink>
           </li>
         </ul>
 
@@ -65,22 +72,48 @@ const Navbar = () => {
         <div className="md:hidden bg-gray-900 text-white w-full text-base font-medium space-y-4 py-4 px-6">
           <ul className="space-y-4">
             <li className="hover:text-blue-300 transition-colors">
-            <Link to='apropos' smooth={true} offset={0} duration={500} onClick={() => setIsMenuOpen(false)} >APropos</Link>
+              <ScrollLink
+                to="apropos"
+                smooth={true}
+                offset={0}
+                duration={500}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                APropos
+              </ScrollLink>
             </li>
             <li className="hover:text-blue-300 transition-colors">
-            <Link to='services' smooth={true} offset={-50} duration={500} onClick={() => setIsMenuOpen(false)} >Services</Link>
-                
-              
+              <ScrollLink
+                to="services"
+                smooth={true}
+                offset={-50}
+                duration={500}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Services
+              </ScrollLink>
             </li>
             <li className="hover:text-blue-300 transition-colors">
-            <Link to='tarifs' smooth={true} offset={-50} duration={500} onClick={() => setIsMenuOpen(false)} >Tarifs</Link>
-             
-              
+              <ScrollLink
+                to="tarifs"
+                smooth={true}
+                offset={-50}
+                duration={500}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Tarifs
+              </ScrollLink>
             </li>
             <li className="hover:text-blue-300 transition-colors">
-             <Link to='contact' smooth={true} offset={-50} duration={500} onClick={() => setIsMenuOpen(false)} >Contact</Link>
-              
-            
+              <ScrollLink
+                to="contact"
+                smooth={true}
+                offset={-50}
+                duration={500}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Contact
+              </ScrollLink>
             </li>
           </ul>
         </div>

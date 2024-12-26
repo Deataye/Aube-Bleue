@@ -100,20 +100,20 @@ const Avis = () => {
   const currentReview = reviews[currentReviewIndex];
 
   return (
-    <section className="h-[900px] py-12 px-4">
+    <section className="h-[900px] lg:py-12 px-4">
       <div className="container mx-auto px-4 md:px-8 max-w-[1170px] text-[#081356]">
         {/* Title */}
-        <h2 className="text-[35px] lg:text-[70px] font-normal font-sans leading-[55px] lg:leading-[80.49px] text-center ">Avis</h2>
+        <h2 className="text-[60px] mb-6 lg:mb-6 lg:text-[70px] font-normal font-sans leading-[68.99px] lg:leading-[80.49px] text-center ">Avis</h2>
 
         {/* Star Rating */}
         <div className="text-center mb-4">
-          <div className="flex justify-center  space-x-1 mb-2">
+          <div className="flex justify-center  space-x-1 mb-4">
             {/* Render stars dynamically based on rating */}
             {currentReview &&
               Array.from({ length: 5 }).map((_, index) => (
                 <span
                   key={index}
-                  className={`text-5xl ${
+                  className={`lg:text-5xl text-3xl ${
                     index < currentReview.rating
                       ? "text-[#081356]"
                       : "text-gray-300"
@@ -123,23 +123,23 @@ const Avis = () => {
                 </span>
               ))}
           </div>
-          <p className="text-lg font-sans font-normal lg:text-[25px] lg:leading-[25px] mb-20">
+          <p className="text-lg font-sans font-normal lg:text-[25px] lg:leading-[25px] mb-14 lg:mb-20">
             Note de {currentReview?.rating} sur {reviews.length} avis
           </p>
         </div>
 
         {/* Review Button */}
-        <div className="text-center mb-32">
-          <button className="bg-[#B5B5F2] hover:bg-blue-200 text-[#081356] text-[15px] leading-[16px] lg:text-[25px] lg:leading-[25px] font-normal px-6 py-2 rounded-3xl border border-[rgba(8,19,86,1)] transition">
+        <div className="text-center mb-16 lg:mb-32">
+          <button className="bg-[#B5B5F2] hover:bg-blue-200 text-[#081356] text-[20px] leading-[25px] lg:text-[25px] lg:leading-[25px] font-normal px-6 py-2 rounded-3xl border border-[rgba(8,19,86,1)] transition">
             Écrire un avis ici
           </button>
         </div>
 
         {/* Review Content */}
         {currentReview && (
-          <div className="text-center px-8  lg:w-[1074px] ">
-            <p className="  lg:text-[25px] lg:leading-[30px] font-normal font-sans mb-12  leading-relaxed">{currentReview.content}</p>
-            <p className="font-normal font-sans lg:text-[25px] lg:leading-[30px] mb-12 underline">{currentReview.name}</p>
+          <div className="text-center lg:px-8  lg:w-[1074px] ">
+            <p className="  lg:text-[25px] lg:leading-[30px] text-[25px] leading-[30px] font-normal font-sans mb-12  ">{currentReview.content}</p>
+            <p className="font-normal font-sans text-[25px] leading-[30px]  lg:text-[25px] lg:leading-[30px] mb-12 underline">{currentReview.name}</p>
           </div>
         )}
 

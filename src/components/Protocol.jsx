@@ -23,29 +23,29 @@ const Protocol = () => {
     <section className="bg-[linear-gradient(180deg,_#C9A6D1_3%,_#91ACC9_38%,_#5E65E9_100%)] py-12">
       <div className="container mx-auto max-w-[1200px] px-2">
         <div className="text-center mb-8">
-          <h2 className="text-[35px] lg:text-[70px] font-sans font-normal leading-[55px] lg:leading-[39px] text-[#081356] mb-5">
+          <h2 className="text-[60px] lg:text-[70px] font-sans font-normal leading-[68.99px] lg:leading-[39px] text-[#081356] mb-5">
             Protocole
           </h2>
-          <p className="text-[#081356] text-[17px] leading-[15px] lg:text-[25px] font-normal lg:leading-[44px]">
+          <p className="text-[#081356] text-[20px] leading-[28px] lg:text-[25px]  font-sans font-bold lg:leading-[44px]">
             Association de six techniques
           </p>
         </div>
 
         <div className="space-y-8">
           {techniques.map((technique, index) => (
-            <div key={index} className="flex flex-row items-start gap-2">
-              <div className="text-[#081356] text-[18px] lg:text-[40px] leading-[19px] lg:leading-[55px] font-normal font-sans">
+            <div key={index} className="flex flex-row items-start px-5 lg:px-0 gap-2">
+              <div className="text-[#081356] text-[28px] leading-[33px] lg:text-[40px]  lg:leading-[55px] font-normal font-sans">
                 {index + 1}.
               </div>
-              <div className="flex-1 text-left">
-                <p className="text-[#081356] mb-8 text-[18px] leading-[19px] lg:text-[40px] lg:leading-[55px] font-normal font-sans">
+              <div className="flex-1  text-left">
+                <p className="text-[#081356] lg:mb-8 text-[28px] leading-[33px] lg:text-[40px] lg:leading-[55px] font-normal font-sans">
                   {technique.title}
                 </p>
                 <button
                   onClick={() => navigate(technique.path)}
                   className="mt-2 px-4 py-1 text-[#081356] text-[20px] lg:text-[25px] lg:leading-[46px] border border-[rgba(8,19,86,1)] font-normal font-sans rounded-full hover:bg-blue-900 hover:text-white transition"
                 >
-                  + Plus de détails
+                   → Plus de détails
                 </button>
               </div>
               <div
