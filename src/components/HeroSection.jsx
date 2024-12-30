@@ -45,15 +45,18 @@ const HeroSection = () => {
         backgroundImage: `url(${Herobg})`,
       }}
     >
-      <div className="text-white">
+      <div className="">
         {renderQuote()}
-        <button className="lg:hidden mt-6 px-4 py-2 sm:px-6 sm:py-3 bg-[#A6B4E4] text-[#081356] text-sm sm:text-base font-semibold rounded-lg shadow-md hover:bg-blue-200 transition duration-300">
+        <button className="lg:hidden mt-6 px-4 py-2 sm:px-6 sm:py-3 bg-[#A6B4E4] text-[#081356] text-sm sm:text-base font-semibold rounded-lg shadow-md hover:bg-blue-200 transition duration-300"><span>
+
           Réservez vos soins ici
-        </button>
+          </span></button>
+        
       </div>
-      <button className="hidden lg:block w-[340px] h-[51px] px-4 py-2 bg-[#A6B4E4] text-[#081356] font-sans font-normal text-[30px] leading-[34.5px] absolute bottom-[180px] right-[50px] gap-0 rounded-3xl border border-[rgba(8,19,86,1)]">
-        Réservez vos soins ici
-      </button>
+      <button className="hidden lg:block w-[340px] h-[51px] px-4 py-2 bg-[#A6B4E4] text-[#081356] font-sans font-normal text-[30px] leading-[34.5px] absolute bottom-[180px] right-[50px] gap-0 rounded-3xl border border-[rgba(8,19,86,1)]"><span>
+
+Réservez vos soins ici
+</span></button>
     </section>
   );
 };

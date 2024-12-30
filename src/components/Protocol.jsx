@@ -42,11 +42,11 @@ const Protocol = () => {
                   {technique.title}
                 </p>
                 <button
-                  onClick={() => navigate(technique.path)}
-                  className="mt-2 px-4 py-1 text-[#081356] text-[20px] lg:text-[25px] lg:leading-[46px] border border-[rgba(8,19,86,1)] font-normal font-sans rounded-full hover:bg-blue-900 hover:text-white transition"
-                >
-                   → Plus de détails
-                </button>
+  onClick={() => navigate(technique.path)}
+  className="mt-2 px-4 py-1 text-[20px] lg:text-[25px] lg:leading-[46px] font-normal font-sans rounded-full"
+>
+  <span>→ Plus de détails</span>
+</button>
               </div>
               <div
                 className="w-[100px] h-[100px] lg:w-[181px] lg:h-[180px] rounded-full bg-cover bg-center shadow-md"

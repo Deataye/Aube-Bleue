@@ -130,9 +130,9 @@ const Avis = () => {
 
         {/* Review Button */}
         <div className="text-center mb-16 lg:mb-32">
-          <button className="bg-[#B5B5F2] hover:bg-blue-200 text-[#081356] text-[20px] leading-[25px] lg:text-[25px] lg:leading-[25px] font-normal px-6 py-2 rounded-3xl border border-[rgba(8,19,86,1)] transition">
-            Écrire un avis ici
-          </button>
+        <button className="bg-[#B5B5F2] text-[20px] leading-[25px] lg:text-[25px] lg:leading-[25px] font-normal px-6 py-2 rounded-3xl transition">
+  <span>Écrire un avis ici</span>
+</button>
         </div>
 
         {/* Review Content */}
