@@ -41,7 +41,7 @@ const Contact = ({id}) => {
         {/* Reservation Button */}
         <div className="text-left  mb-6">
           
-        <button className="bg-[#B5B5F2]  text-[15px] lg:text-[30px] font-semibold px-6 py-2 rounded-3xl transition">
+        <button className="bg-[#B5B5F2]  text-[15px] lg:text-[25px] font-semibold px-6 py-2 rounded-3xl transition">
   <span>Réservez vos soins ici</span>
 </button>
         </div>
