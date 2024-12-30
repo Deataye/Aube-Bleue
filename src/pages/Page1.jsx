@@ -7,6 +7,10 @@ const Page1 = () => {
     window.scrollTo(0, 0); // Scroll to the top when the component mounts
   }, []);
 
+  const handleBackClick = () => {
+    window.scrollTo(0, 0); // Scroll to the top before navigating
+  };
+
   return (
     <section className="max-w-full py-32 px-4 bg-[linear-gradient(180deg,_#79A8B4_23%,_#4BA3B3_57.5%,_#E678C2_88%)]">
       <div className="lg:p-6 max-w-7xl mx-auto">
@@ -31,7 +35,7 @@ const Page1 = () => {
           </div>
 
           {/* Image and Call-to-Action */}
-          <div className="relative">
+          <div className="relative mb-8">
             <div
               style={{ backgroundImage: `url(${PagePic1})` }}
               className="lg:w-[289px] w-[265px] h-[353px] lg:h-[385px] max-w-xs shadow-md"
@@ -49,6 +53,7 @@ const Page1 = () => {
         <div className="lg:mt-6 mt-16">
           <Link
             to="/"
+            onClick={handleBackClick}
             className="inline-block text-[#081356] lg:mb-9 text-[20px] leading-[25.5px] font-sans font-normal py-2 px-4 rounded-full border border-[rgba(8,19,86,1)] hover:bg-blue-200 transition-colors"
           >
             Retour à la page principale

@@ -1,11 +1,15 @@
-import React, { useEffect } from 'react'; // Added useEffect import
+import React, { useEffect } from 'react'; 
 import { Link } from 'react-router-dom';
 import PagePic5 from '../assets/page-5.svg';
 
-const Page5 = () => { // Updated component name to match the content
+const Page5 = () => {
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top when the component mounts
   }, []);
+
+  const handleBackClick = () => {
+    window.scrollTo(0, 0); // Scroll to the top before navigating
+  };
 
   return (
     <section className="max-w-full py-32 px-4 bg-[linear-gradient(180deg,_#FFEFFD_14.5%,_#E29192_68%,_#3E3B72_100%)]">
@@ -25,7 +29,7 @@ const Page5 = () => { // Updated component name to match the content
           </div>
 
           {/* Image and Call-to-Action */}
-          <div className="relative">
+          <div className="relative mb-8">
             <div
               style={{ backgroundImage: `url(${PagePic5})` }}
               className="lg:w-[289px] w-[349px] h-[353px] lg:h-[356px] lg:max-w-xs"
@@ -42,6 +46,7 @@ const Page5 = () => { // Updated component name to match the content
         {/* Back Button */}
         <Link
           to="/"
+          onClick={handleBackClick}
           className="inline-block text-[#081356] lg:mb-9 text-[20px] leading-[25.5px] font-sans font-normal py-2 px-4 rounded-full border border-[rgba(8,19,86,1)] hover:bg-blue-200 transition-colors"
         >
           Retour à la page principale

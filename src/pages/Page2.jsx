@@ -2,10 +2,14 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PagePic2 from '../assets/page-2.svg';
 
-const Page1 = () => {
+const Page2 = () => {
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top when the component mounts
   }, []);
+
+  const handleBackClick = () => {
+    window.scrollTo(0, 0); // Scroll to the top before navigating
+  };
 
   return (
     <section className="max-w-full py-32 px-4 bg-[linear-gradient(180deg,_#E3AF92_0%,_#BD5637_43.5%,_#8B4F46_100%)]">
@@ -31,7 +35,7 @@ const Page1 = () => {
           </div>
 
           {/* Image and Call-to-Action */}
-          <div className="relative">
+          <div className="relative mb-8">
             <div
               style={{ backgroundImage: `url(${PagePic2})` }}
               className="lg:w-[289px] w-[265px] h-[353px] lg:h-[385px] max-w-xs"
@@ -48,6 +52,7 @@ const Page1 = () => {
         {/* Back Button */}
         <Link
           to="/"
+          onClick={handleBackClick}
           className="inline-block text-[#081356] lg:mb-9 text-[20px] leading-[25.5px] font-sans font-normal py-2 px-4 rounded-full border border-[rgba(8,19,86,1)] hover:bg-blue-200 transition-colors"
         >
           Retour à la page principale
@@ -57,4 +62,4 @@ const Page1 = () => {
   );
 };
 
-export default Page1;
+export default Page2;
