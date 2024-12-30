@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { Link as ScrollLink } from 'react-scroll'; // Import smooth scrolling Link
-import { Link as RouterLink } from 'react-router-dom'; // Import React Router Link
+import { Link as ScrollLink } from 'react-scroll';
+import { useNavigate, useLocation } from 'react-router-dom';
 import Logo from '../assets/logo.svg';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,40 +22,55 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleNavigateAndScroll = (sectionId) => {
+    if (location.pathname !== '/') {
+      // Navigate to the homepage first
+      navigate('/');
+      setTimeout(() => {
+        document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+      }, 100); // Adjust delay as needed
+    } else {
+      // Directly scroll if already on the homepage
+      document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsMenuOpen(false); // Close the menu for mobile
+  };
+
   return (
-    <nav
-      className={`absolute top-0 left-0 w-full z-50 transition-all duration-300`}
-    >
+    <nav className={`absolute top-0 left-0 w-full z-50 transition-all duration-300`}>
       <div className="flex justify-between items-center px-6 py-4 overflow-hidden">
         {/* Logo with homepage link */}
-        <RouterLink to="/" className="flex items-center h-[107px] w-[107px]">
-          <div
-            style={{ backgroundImage: `url(${Logo})` }}
-            className="h-full w-full bg-cover bg-center"
-          ></div>
-        </RouterLink>
+        <div
+          className="flex items-center h-[107px] w-[107px] cursor-pointer"
+          onClick={() => navigate('/')}
+          style={{ backgroundImage: `url(${Logo})`, backgroundSize: 'cover' }}
+        />
 
         {/* Desktop Links */}
         <ul className="hidden md:flex space-x-24 px-20 text-[#081356] text-base lg:text-[25px] lg:leading-[28.75px] font-normal">
-          <li className="hover:text-blue-300 transition-colors">
-            <ScrollLink to="apropos" smooth={true} offset={0} duration={500}>
-              APropos
-            </ScrollLink>
+          <li
+            className="hover:text-blue-300 transition-colors cursor-pointer"
+            onClick={() => handleNavigateAndScroll('apropos')}
+          >
+            APropos
           </li>
-          <li className="hover:text-blue-300 transition-colors">
-            <ScrollLink to="services" smooth={true} offset={0} duration={500}>
-              Services
-            </ScrollLink>
+          <li
+            className="hover:text-blue-300 transition-colors cursor-pointer"
+            onClick={() => handleNavigateAndScroll('services')}
+          >
+            Services
           </li>
-          <li className="hover:text-blue-300 transition-colors">
-            <ScrollLink to="tarifs" smooth={true} offset={0} duration={500}>
-              Tarifs
-            </ScrollLink>
+          <li
+            className="hover:text-blue-300 transition-colors cursor-pointer"
+            onClick={() => handleNavigateAndScroll('tarifs')}
+          >
+            Tarifs
           </li>
-          <li className="hover:text-blue-300 transition-colors">
-            <ScrollLink to="contact" smooth={true} offset={0} duration={500}>
-              Contact
-            </ScrollLink>
+          <li
+            className="hover:text-blue-300 transition-colors cursor-pointer"
+            onClick={() => handleNavigateAndScroll('contact')}
+          >
+            Contact
           </li>
         </ul>
 
@@ -71,49 +88,29 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-gray-900 text-white w-full text-base font-medium space-y-4 py-4 px-6">
           <ul className="space-y-4">
-            <li className="hover:text-blue-300 transition-colors">
-              <ScrollLink
-                to="apropos"
-                smooth={true}
-                offset={0}
-                duration={500}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                APropos
-              </ScrollLink>
+            <li
+              className="hover:text-blue-300 transition-colors cursor-pointer"
+              onClick={() => handleNavigateAndScroll('apropos')}
+            >
+              APropos
             </li>
-            <li className="hover:text-blue-300 transition-colors">
-              <ScrollLink
-                to="services"
-                smooth={true}
-                offset={-50}
-                duration={500}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Services
-              </ScrollLink>
+            <li
+              className="hover:text-blue-300 transition-colors cursor-pointer"
+              onClick={() => handleNavigateAndScroll('services')}
+            >
+              Services
             </li>
-            <li className="hover:text-blue-300 transition-colors">
-              <ScrollLink
-                to="tarifs"
-                smooth={true}
-                offset={-50}
-                duration={500}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Tarifs
-              </ScrollLink>
+            <li
+              className="hover:text-blue-300 transition-colors cursor-pointer"
+              onClick={() => handleNavigateAndScroll('tarifs')}
+            >
+              Tarifs
             </li>
-            <li className="hover:text-blue-300 transition-colors">
-              <ScrollLink
-                to="contact"
-                smooth={true}
-                offset={-50}
-                duration={500}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Contact
-              </ScrollLink>
+            <li
+              className="hover:text-blue-300 transition-colors cursor-pointer"
+              onClick={() => handleNavigateAndScroll('contact')}
+            >
+              Contact
             </li>
           </ul>
         </div>
