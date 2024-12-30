@@ -79,8 +79,9 @@ const Navbar = () => {
           className="md:hidden text-2xl focus:outline-none"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle navigation menu"
-        >
+        ><span>
           {isMenuOpen ? '✖' : '☰'}
+          </span>
         </button>
       </div>
 
